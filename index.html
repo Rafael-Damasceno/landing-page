@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>landing page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <div class="conteiner">
+            <nav>
+                <div class="logo">
+                    <a href="index.html"> <img id="icon-logo" src="img/Chanut-Role-Playing-Fairy.svg" width="100%"></a>
+                </div>
+                <ul>
+                    <li><a href="">Inicio</a> </li>
+                    <li><a href="">Sobre</a> </li>
+                    <li><a href="">Paginas</a></li>
+                    <li><a href="">Contatos</a></li>
+                    <li class="lg"><a href="">Login</a></li>
+                </ul>
+                    <div class="menu-icon">
+                        <img src="img/menu.png" alt="menu-icon">
+                    </div>
+                </nav>
+
+                <main>
+                    <div class="main_text">
+                        <h1><b>Grimorio do Mestre</b> <strong>Compêndio D&D 5ed</strong></h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim et numquam cumque. Suscipit officiis autem debitis facilis ipsum tenetur amet expedita molestiae consequatur harum obcaecati sapiente, culpa quia saepe excepturi.</p>
+
+                        <button>Acesse</button>
+                    </div>
+                    <div class="main_img">
+                        <img src="img/Spell-Book-icon.png" alt="grimorio">
+                    </div>
+                </main>
+        </div>
+        <script>
+            var menu = document.querySelector('nav ul');
+            var menuIcon = document.querySelector('nav .menu-icon');
+            var menuIconImg = document.querySelector('nav .menu-icon img');
+            
+            menuIcon.addEventListener('click', ( )=>{
+                menu.classList.toggle('activo');
+                if (menuIconImg.getAttribute("src") == 'img/menu.png'){
+                    menuIconImg.setAttribute("src", "img/close.png");
+                }
+                else{
+                    menuIconImg.setAttribute("src", "img/menu.png");
+                }
+            
+            
+            })
+                
+        </script>
+</body>
+</html>
